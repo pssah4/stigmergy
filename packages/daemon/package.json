@@ -1,0 +1,32 @@
+{
+  "name": "@stigmergy/daemon",
+  "version": "0.0.0",
+  "description": "Stigmergy daemon: a Studio-managed worker that holds a single-writer role lock, auto-names emergent paths, and hosts the consult server (ADR-19, ADR-20, FEAT-04-04).",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./bin": "./dist/bin.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "stigmergyd": "./dist/bin.js"
+  },
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "@agentic-stigmergy/core": "^0.1.0",
+    "@stigmergy/storage-better-sqlite3": "0.0.0",
+    "@stigmergy/embedding-transformers": "0.0.0",
+    "@agentic-stigmergy/client": "^0.1.0",
+    "@stigmergy/llm": "0.0.0"
+  },
+  "license": "Apache-2.0"
+}

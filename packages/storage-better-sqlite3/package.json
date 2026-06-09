@@ -1,0 +1,26 @@
+{
+  "name": "@stigmergy/storage-better-sqlite3",
+  "version": "0.0.0",
+  "description": "better-sqlite3 StoragePort adapter for Stigmergy (Node). WAL plus busy_timeout (ADR-02).",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "@agentic-stigmergy/core": "^0.1.0",
+    "better-sqlite3": "^11.8.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12"
+  },
+  "license": "Apache-2.0"
+}

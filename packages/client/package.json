@@ -1,0 +1,28 @@
+{
+  "name": "@agentic-stigmergy/client",
+  "version": "0.1.0",
+  "description": "Loop-side client transport for Stigmergy: consult a warm daemon over a socket (ADR-12, ADR-20, FEAT-04-08), with a fallback to the local engine when the daemon is unreachable.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "@agentic-stigmergy/core": "^0.1.0"
+  },
+  "devDependencies": {
+    "@agentic-stigmergy/loop": "^0.1.0"
+  },
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  }
+}

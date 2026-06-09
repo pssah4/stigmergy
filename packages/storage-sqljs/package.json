@@ -1,0 +1,26 @@
+{
+  "name": "@stigmergy/storage-sqljs",
+  "version": "0.0.0",
+  "description": "sql.js (WASM) StoragePort adapter for Stigmergy (sandbox). In-memory, single-owner (ADR-02, ADR-12).",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "@agentic-stigmergy/core": "^0.1.0",
+    "sql.js": "^1.12.0"
+  },
+  "devDependencies": {
+    "@types/sql.js": "^1.4.9"
+  },
+  "license": "Apache-2.0"
+}

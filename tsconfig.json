@@ -1,0 +1,21 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/core" },
+    { "path": "./packages/storage-conformance" },
+    { "path": "./packages/storage-better-sqlite3" },
+    { "path": "./packages/storage-sqljs" },
+    { "path": "./packages/embedding-transformers" },
+    { "path": "./packages/loop" },
+    { "path": "./packages/integration-vercel-ai" },
+    { "path": "./packages/integration-langchain" },
+    { "path": "./packages/integration-openai-agents" },
+    { "path": "./packages/connect" },
+    { "path": "./packages/discovery" },
+    { "path": "./packages/daemon" },
+    { "path": "./packages/client" },
+    { "path": "./packages/harness" },
+    { "path": "./packages/cli" },
+    { "path": "./packages/llm" }
+  ]
+}

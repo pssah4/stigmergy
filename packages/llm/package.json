@@ -1,0 +1,22 @@
+{
+  "name": "@stigmergy/llm",
+  "version": "0.0.0",
+  "description": "Ported provider layer for Stigmergy (FEAT-01-07, ADR-11): ApiHandler.classifyText, factory, model-registry, tier, pricing, SettingsCrypter interface, and a capability augmenter. Providers run on an injectable fetch; default off.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "@agentic-stigmergy/core": "^0.1.0"
+  },
+  "license": "Apache-2.0"
+}

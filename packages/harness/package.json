@@ -1,0 +1,25 @@
+{
+  "name": "@stigmergy/harness",
+  "version": "0.0.0",
+  "description": "Measurement and ablation harness for Stigmergy: versioned workloads, deterministic runner, JSON/MD reports (FEAT-02-03, ADR-08, ADR-13).",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "@agentic-stigmergy/core": "^0.1.0"
+  },
+  "devDependencies": {
+    "@stigmergy/storage-sqljs": "0.0.0"
+  },
+  "license": "Apache-2.0"
+}

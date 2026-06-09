@@ -1,0 +1,28 @@
+{
+  "name": "@stigmergy/storage-conformance",
+  "version": "0.0.0",
+  "description": "Shared StoragePort conformance suite, run by every storage adapter (ADR-02).",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "@agentic-stigmergy/core": "^0.1.0"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.8"
+  },
+  "peerDependencies": {
+    "vitest": "^2.1.0"
+  },
+  "license": "Apache-2.0"
+}

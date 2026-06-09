@@ -1,0 +1,22 @@
+{
+  "name": "@stigmergy/connect",
+  "version": "0.0.0",
+  "description": "Connect-Verify for Stigmergy: framework detection from package.json plus a live-green wiring check (FEAT-02-08, ADR-07).",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "@agentic-stigmergy/core": "^0.1.0"
+  },
+  "license": "Apache-2.0"
+}

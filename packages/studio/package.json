@@ -1,0 +1,42 @@
+{
+  "name": "@stigmergy/studio",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Stigmergy Studio: Electron desktop app that visualises and edits the pheromone substrate (EPIC-03, ADR-15).",
+  "type": "module",
+  "main": "./out/main/index.js",
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "rebuild:electron": "electron-rebuild -f -w better-sqlite3"
+  },
+  "dependencies": {
+    "@react-sigma/core": "^5.0.0",
+    "@stigmergy/connect": "0.0.0",
+    "@agentic-stigmergy/core": "^0.1.0",
+    "@stigmergy/llm": "0.0.0",
+    "@stigmergy/storage-better-sqlite3": "0.0.0",
+    "better-sqlite3": "^11.8.0",
+    "graphology": "^0.26.0",
+    "graphology-layout-forceatlas2": "^0.10.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sigma": "^3.0.0",
+    "@stigmergy/discovery": "0.0.0",
+    "@stigmergy/embedding-transformers": "0.0.0",
+    "@stigmergy/daemon": "0.0.0"
+  },
+  "devDependencies": {
+    "@electron/rebuild": "^3.6.0",
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^31.7.0",
+    "electron-vite": "^2.3.0",
+    "vite": "^5.4.11"
+  }
+}

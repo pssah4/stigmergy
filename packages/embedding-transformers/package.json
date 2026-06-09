@@ -1,0 +1,23 @@
+{
+  "name": "@stigmergy/embedding-transformers",
+  "version": "0.0.0",
+  "description": "transformers.js EmbeddingPort adapter for Stigmergy. Runs on the onnxruntime-node backend in Node; all-MiniLM-L6-v2 (FEAT-01-05, ADR-12).",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "@agentic-stigmergy/core": "^0.1.0",
+    "@huggingface/transformers": "^4.2.0"
+  },
+  "license": "Apache-2.0"
+}
